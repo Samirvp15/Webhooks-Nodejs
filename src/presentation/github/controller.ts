@@ -8,10 +8,9 @@ export class GithubController{
     webhookHandler = (req: Request, res: Response)=>{
 
         const githubEvent = req.header('x-github-event') ?? 'unknown';
+        //const signature = req.header('x-hub-signature-256') ?? 'unknown';
 
         const payload = req.body;
-
-        console.log(githubEvent);
 
 
         res.status(202).json('aaaa');
