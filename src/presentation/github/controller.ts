@@ -34,6 +34,7 @@ export class GithubController {
       this.discordService.notify(message)
       .then( () =>  res.status(202).json('Acepted'))
       .catch((error)=> res.status(500).json(error));
+
     }
 
 
